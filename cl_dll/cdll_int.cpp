@@ -184,12 +184,15 @@ the hud variables.
 ==========================
 */
 
+#include "windawz_client_init.h" // for Windawz::Init()
+
 void DLLEXPORT HUD_Init( void )
 {
 //	RecClHudInit();
 	InitInput();
 	gHUD.Init();
 	Scheme_Init();
+	Windawz::Init();
 }
 
 

@@ -55,6 +55,12 @@
     <Filter Include="Source Files\_hl\cl_dll\hl">
       <UniqueIdentifier>{bd9d5958-4e67-4bff-bbd8-6ba6dfcdb720}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Windawz">
+      <UniqueIdentifier>{066ee72e-908e-4eda-a084-81f9c40c23b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Windawz">
+      <UniqueIdentifier>{c6c8a99c-28ce-41ec-badf-c1c80e8cfa09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\dlls\crossbow.cpp">
@@ -306,6 +312,12 @@
     <ClCompile Include="..\..\pm_shared\pm_shared.cpp">
       <Filter>Source Files\pm_shared</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Windawz\windawz_cvars.cpp">
+      <Filter>Source Files\Windawz</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Windawz\windawz_client_init.cpp">
+      <Filter>Source Files\Windawz</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\cl_dll\kbutton.h">
@@ -430,6 +442,12 @@
     </ClInclude>
     <ClInclude Include="..\..\common\Platform.h">
       <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Windawz\windawz_cvars.h">
+      <Filter>Header Files\Windawz</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Windawz\windawz_client_init.h">
+      <Filter>Header Files\Windawz</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -42,7 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(Configuration)\$(ProjectName)\</OutDir>
+    <OutDir>I:\Games\SteamLibrary\steamapps\common\Half-Life\wtestmod\cl_dlls</OutDir>
     <TargetName>client</TargetName>
     <IntDir>$(Configuration)\$(ProjectName)\int\</IntDir>
   </PropertyGroup>
@@ -60,7 +60,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS;HL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;Headers\Windawz;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -87,7 +87,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;CLIENT_DLL;CLIENT_WEAPONS;HL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\dlls;..\..\cl_dll;..\..\public;..\..\common;..\..\pm_shared;..\..\engine;..\..\utils\vgui\include;..\..\game_shared;..\..\external;Headers\Windawz;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -190,6 +190,8 @@
     <ClCompile Include="..\..\pm_shared\pm_math.cpp" />
     <ClCompile Include="..\..\pm_shared\pm_shared.cpp" />
     <ClCompile Include="..\..\public\interface.cpp" />
+    <ClCompile Include="Sources\Windawz\windawz_cvars.cpp" />
+    <ClCompile Include="Sources\Windawz\windawz_client_init.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\cl_dll\ammo.h" />
@@ -233,6 +235,8 @@
     <ClInclude Include="..\..\pm_shared\pm_materials.h" />
     <ClInclude Include="..\..\pm_shared\pm_movevars.h" />
     <ClInclude Include="..\..\pm_shared\pm_shared.h" />
+    <ClInclude Include="Headers\Windawz\windawz_cvars.h" />
+    <ClInclude Include="Headers\Windawz\windawz_client_init.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\lib\public\game_controls.lib" />
